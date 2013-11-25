@@ -1,0 +1,24 @@
+{
+  "name": "restman",
+  "version": "0.0.0",
+  "description": "A Chrome-based Restful Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andyhorng/restman.git"
+  },
+  "keywords": [
+    "rest"
+  ],
+  "author": "andyhorng <andy@eztable.com.tw>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "9ce955fbaeabc63e030a5131321675e6a5b24a44",
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.14.0"
+  }
+}
