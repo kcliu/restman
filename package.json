@@ -4,7 +4,7 @@
   "description": "A Chrome-based Restful Client",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "testem"
   },
   "repository": {
     "type": "git",
