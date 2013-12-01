@@ -18,9 +18,7 @@
   "gitHead": "9ce955fbaeabc63e030a5131321675e6a5b24a44",
   "devDependencies": {
     "chai": "~1.8.1",
-    "mocha": "~1.14.0"
-  },
-  "dependencies": {
+    "mocha": "~1.14.0",
     "jade": "~0.35.0",
     "fs-extra": "~0.8.1",
     "prunt": "~0.1.2"
