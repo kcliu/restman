@@ -38,3 +38,6 @@ app/components
 global.json
 parsePrivateKey.coffee
 parsePrivateKey.js
+
+### Builds ###
+build

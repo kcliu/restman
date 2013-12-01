@@ -9,7 +9,11 @@ trim_trailing_whitespace = true
 [*.coffee]
 indent_style = space
 indent_size = 2
-[*.js]
 
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.jade]
 indent_style = space
 indent_size = 2
