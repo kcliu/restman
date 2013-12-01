@@ -12,6 +12,7 @@ Install Dependencies
 --------------------
 
 ```
+npm install -g coffee-script testem
 npm install
 npm test
 ```
@@ -31,5 +32,6 @@ File Structure
 Test Structure
 --------------
 
-* Option A: Mocha / Chai in Node
-* Option B: [Testem](https://github.com/airportyh/testem) in Chrome
+[Testem](https://github.com/airportyh/testem) in Chrome
+
+run `testem` or `npm test`
