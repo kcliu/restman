@@ -29,7 +29,7 @@ task 'coffee', 'compile coffee', ->
 task 'suites', 'compile test suites', ->
   read('test/**/*.coffee')
   .then(coffee)
-  .then(mv('test', 'build/app/test'))
+  .then(mv('test', 'build/test'))
   .done(write)
 
 task 'jade', 'compile jade', ->
