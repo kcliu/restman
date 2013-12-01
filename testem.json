@@ -11,7 +11,7 @@
     "app/components/q/q.js",
     "app/components/superagent/superagent.js",
     "build/app/scripts/*.js",
-    "build/app/test/*.js"
+    "build/test/*.js"
   ],
   "routes": {
     "/app": "build/app"
