@@ -26,6 +26,12 @@ task 'coffee', 'compile coffee', ->
     .then(mv('src', 'build/app/scripts'))
     .done(write)
 
+task 'suites', 'compile test suites', ->
+  read('test/**/*.coffee')
+  .then(coffee)
+  .then(mv('test', 'build/test'))
+  .done(write)
+
 task 'jade', 'compile jade', ->
   read('app/**/*.jade')
     .then(compileJade)
@@ -38,6 +44,10 @@ task 'build', 'build restman', ->
   invoke 'jade'
   fs.copySync 'app/manifest.json', 'build/app/manifest.json'
   fs.copySync 'app/components', 'build/app/components'
+
+task 'build:test', 'build for testem', ->
+  invoke 'build'
+  invoke 'suites'
 
 task 'clean', 'clean builds', ->
   ['build'].forEach (dir)->

@@ -1,0 +1,26 @@
+{
+  "framework": "mocha+chai",
+  "before_tests": "cake build:test",
+  "on_exit": "cake clean",
+  "src_files": [
+    "src/*",
+    "test/*"
+  ],
+  "serve_files": [
+    "app/components/jquery/jquery.min.js",
+    "app/components/q/q.js",
+    "app/components/superagent/superagent.js",
+    "build/app/scripts/*.js",
+    "build/test/*.js"
+  ],
+  "routes": {
+    "/app": "build/app"
+  },
+  "launchers": {
+    "Node": {
+      "command": "mocha -R tap",
+      "protocol": "tap"
+    }
+  },
+  "launch_in_dev": [ "chrome" ]
+}
