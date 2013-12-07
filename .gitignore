@@ -33,3 +33,8 @@ Icon
 
 ### Bower ###
 app/components
+
+## Parse ##
+global.json
+parsePrivateKey.coffee
+parsePrivateKey.js
