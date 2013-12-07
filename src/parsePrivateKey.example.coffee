@@ -1,0 +1,1 @@
+Parse.initialize 'APPLICATION ID', 'JAVASCRIPT KEY'
