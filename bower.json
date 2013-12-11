@@ -21,7 +21,6 @@
   "dependencies": {
     "superagent": "~0.15.7",
     "q": "~0.9.7",
-    "polymer": "~0.1.0",
     "jquery": "~2.0.3"
   }
 }
