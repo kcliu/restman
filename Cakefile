@@ -1,16 +1,10 @@
 {read} = prunt = require 'prunt'
 path = require 'path'
 fs = require 'fs-extra'
-jade = require 'jade'
 
 coffee = do prunt.coffee
 write = do prunt.write
-compileJade = (files)->
-  files.map (file)->
-    {content, filename, dirname} = file
-    file.content = jade.compile(content, {})()
-    file.filename = filename.replace '.jade', '.html'
-    file
+jade = do prunt.jade
 
 mv = (source, dest)->
   source = path.normalize source
@@ -34,7 +28,7 @@ task 'suites', 'compile test suites', ->
 
 task 'jade', 'compile jade', ->
   read('app/**/*.jade')
-    .then(compileJade)
+    .then(jade)
     .then(mv('app', 'build/app'))
     .done(write)
 
