@@ -4,7 +4,8 @@
   "description": "A Chrome-based Restful Client",
   "main": "index.js",
   "scripts": {
-    "test": "testem"
+    "pretest": "./node_modules/.bin/bower install",
+    "test": "testem ci"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "chai": "~1.8.1",
     "mocha": "~1.14.0",
     "fs-extra": "~0.8.1",
-    "prunt": "hden/prunt"
+    "prunt": "hden/prunt",
+    "bower": "~1.2.8"
   }
 }
