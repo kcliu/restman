@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "./node_modules/.bin/bower install",
-    "test": "testem -l PhantomJS"
+    "test": "testem"
   },
   "repository": {
     "type": "git",
