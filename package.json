@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "pretest": "./node_modules/.bin/bower install",
-    "test": "testem"
   },
   "repository": {
     "type": "git",
